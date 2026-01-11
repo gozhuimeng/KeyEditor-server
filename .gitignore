@@ -11,3 +11,10 @@ wheels/
 
 # commit template
 .commit_template.txt
+
+# data
+data/output
+data/bds/output.bds
+
+# test
+test.py
