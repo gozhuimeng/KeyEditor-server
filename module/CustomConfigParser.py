@@ -5,11 +5,12 @@ class CustomConfigParser(configparser.ConfigParser):
     """
     重写ConfigParser
     """
-    def __init__(self,**kwargs):
+
+    def __init__(self, **kwargs):
         """
         修改传参，取消`%`的格式化指令
         """
-        kwargs.setdefault('interpolation',None)
+        kwargs.setdefault("interpolation", None)
         super().__init__(**kwargs)
 
     def optionxform(self, optionstr: str) -> str:

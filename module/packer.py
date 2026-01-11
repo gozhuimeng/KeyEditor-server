@@ -1,5 +1,3 @@
-import configparser
-from os import initgroups
 from module.zipper import Zipper
 from module.CustomConfigParser import CustomConfigParser
 
@@ -132,6 +130,3 @@ class Packer:
         打包内容
         """
         Zipper.zip(self.output_path, self.save_filename)
-
-
-# if __name__ == "__main__":
